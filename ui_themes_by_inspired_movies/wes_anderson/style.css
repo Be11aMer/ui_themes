@@ -1,0 +1,38 @@
+:root {
+  --peach: #f5e6cc;
+  --olive: #a3b18a;
+  --rose: #e5989b;
+  --dark: #5c3c3c;
+}
+
+body {
+  background-color: var(--peach);
+  color: var(--dark);
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+}
+
+header, footer {
+  background-color: var(--rose);
+  padding: 1.5rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--olive);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.btn {
+  background-color: var(--rose);
+  color: var(--dark);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}

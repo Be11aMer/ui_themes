@@ -1,0 +1,81 @@
+:root {
+  --sky-blue: #aee3f9;
+  --yellow: #ffca28;
+  --brown: #6d4c41;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--sky-blue);
+  color: var(--brown);
+  font-family: 'Luckiest Guy', cursive;
+  line-height: 1.6;
+  margin: 0;
+}
+
+header, footer {
+  background-color: var(--yellow);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: var(--brown);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--brown);
+}
+
+.card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn {
+  background-color: var(--yellow);
+  color: var(--brown);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #f4b400;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

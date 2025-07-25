@@ -1,0 +1,46 @@
+:root {
+  --biolume-blue: #00c9ff;
+  --leaf-green: #7ac943;
+  --tribal-purple: #6a0572;
+  --dark-forest: #0b2e13;
+}
+
+body {
+  background-color: var(--dark-forest);
+  color: var(--biolume-blue);
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  background-color: var(--tribal-purple);
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--leaf-green);
+  color: var(--dark-forest);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: var(--biolume-blue);
+  color: var(--dark-forest);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}

@@ -1,0 +1,37 @@
+:root {
+  --black: #0d0d0d;
+  --neon-pink: #ff2e63;
+  --neon-blue: #08f7fe;
+  --purple: #2d132c;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--neon-blue);
+  font-family: 'Orbitron', sans-serif;
+}
+
+header, footer {
+  background-color: var(--purple);
+  text-align: center;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #111;
+  padding: 1.5rem;
+  border-left: 4px solid var(--neon-pink);
+}
+
+.btn {
+  background-color: var(--neon-pink);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}

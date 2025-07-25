@@ -1,0 +1,37 @@
+:root {
+  --jungle: #1e392a;
+  --mud: #5c4b3b;
+  --bone: #f8f3e3;
+  --danger: #d32f2f;
+}
+
+body {
+  background-color: var(--jungle);
+  color: var(--bone);
+  font-family: 'Verdana', sans-serif;
+}
+
+header, footer {
+  background-color: var(--mud);
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--mud);
+  padding: 1.5rem;
+  border-left: 5px solid var(--danger);
+}
+
+.btn {
+  background-color: var(--danger);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}

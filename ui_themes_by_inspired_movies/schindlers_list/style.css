@@ -1,0 +1,108 @@
+:root {
+  /* Grayscale Palette */
+  --black: #1A1A1A;
+  --dark-gray: #2E2E2E;
+  --gray: #7A7A7A;
+  --light-gray: #B0B0B0;
+  --white: #F5F5F5;
+
+  /* Red Accent */
+  --red: #C00000;
+  --red-dark: #8B0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+header,
+footer {
+  background-color: var(--dark-gray);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--white);
+  font-weight: 300;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--dark-gray);
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: var(--light-gray);
+  font-size: 0.95rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--red-dark);
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

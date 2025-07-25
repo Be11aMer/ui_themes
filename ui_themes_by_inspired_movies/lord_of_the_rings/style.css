@@ -1,0 +1,47 @@
+:root {
+  --parchment: #f1e4c1;
+  --moss: #556b2f;
+  --gold: #c9b037;
+  --ink: #2b2b2b;
+}
+
+body {
+  background-color: var(--parchment);
+  color: var(--ink);
+  font-family: 'Cinzel Decorative', cursive;
+  margin: 0;
+}
+
+header, footer {
+  background-color: var(--gold);
+  text-align: center;
+  padding: 1.2rem;
+  color: var(--ink);
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--moss);
+  color: var(--parchment);
+  padding: 1.5rem;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: var(--gold);
+  color: var(--ink);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
